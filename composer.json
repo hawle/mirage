@@ -1,5 +1,5 @@
 {
-    "name": "plateau/mirage",
+    "name": "hawle/mirage",
     "description": "Temporary Folder Manager For Laravel 4",
     "keywords" : ["laravel", "temp", "temporary", "folder", "file"],
     "license": "MIT",
@@ -7,7 +7,12 @@
         {
             "name": "Plateau Creations",
             "email": "plateau.webdesign@gmail.com"
+        },
+        {
+            "name": "Hawle",
+            "email": "gergely.havlicsek@gmail.com"
         }
+        
     ],
     "require": {
         "php": ">=5.3.0",
