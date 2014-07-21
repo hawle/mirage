@@ -12,7 +12,7 @@
             "name": "Hawle",
             "email": "gergely.havlicsek@gmail.com"
         }
-        
+
     ],
     "require": {
         "php": ">=5.3.0",
@@ -20,7 +20,7 @@
     },
     "autoload": {
         "psr-0": {
-            "Plateau\\Mirage\\": "src/"
+            "Hawle\\Mirage\\": "src/"
         }
     },
     "minimum-stability": "stable"
