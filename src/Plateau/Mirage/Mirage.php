@@ -1,5 +1,5 @@
 <?php
-namespace Plateau\Mirage;
+namespace Hawle\Mirage;
 use File;
 use App;
 use Str;
