@@ -1,10 +1,11 @@
 <?php
+
 namespace Hawle\Mirage;
 use Illuminate\Support\Facades\Facade;
 
 
 class MirageFacade extends Facade {
-	
+
 	 /**
      * Get the registered name of the component.
      *

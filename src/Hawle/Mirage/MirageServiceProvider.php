@@ -1,6 +1,9 @@
-<?php namespace Hawle\Mirage;
+<?php
+
+namespace Hawle\Mirage;
 
 use Illuminate\Support\ServiceProvider;
+use App;
 
 class MirageServiceProvider extends ServiceProvider {
 
@@ -45,5 +48,5 @@ class MirageServiceProvider extends ServiceProvider {
 		return array();
 	}
 
-	
+
 }

@@ -1,14 +1,15 @@
 <?php
-namespace Hawle\Mirage;
-use File;
-use App;
-use Str;
-use Config;
 
-// Mirage Simple temporary folder provider that are destroyed 
+namespace Hawle\Mirage;
+use \File;
+use \App;
+use \Str;
+use \Config;
+
+// Mirage Simple temporary folder provider that are destroyed
 // at the end of the request lifecycle using App::after Event
 class Mirage {
-	
+
 
 	public function request($basePath = null)
 	{
@@ -19,7 +20,7 @@ class Mirage {
 
 		// Request a subfolder name and check it doesn't exists
 		$fullTempPath = $this->createRandomFolder($basePath);
-		
+
 		// Return full path
 		return $fullTempPath;
 	}
@@ -27,12 +28,12 @@ class Mirage {
 
 	/**
 	 * Get the base path from config
-	 * @return [string] Temporary Folder Path 
+	 * @return [string] Temporary Folder Path
 	 */
 	public function getConfigBasePath()
 	{
 		$tempLocation = Config::get('mirage::temp_folder_path');
-		
+
 		// Check if temp folder exists, create it otherwise
 		if (! File::isDirectory($tempLocation))
 		{
@@ -59,7 +60,7 @@ class Mirage {
 		File::makeDirectory($fullPath);
 		// Mark for deletion
 		$this->markForDeletion($fullPath);
-	
+
 		return $fullPath;
 	}
 
@@ -84,5 +85,5 @@ class Mirage {
 	{
 		File::cleanDirectory($this->getConfigBasePath() );
 	}
-	
+
 }
