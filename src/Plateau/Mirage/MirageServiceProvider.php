@@ -1,4 +1,4 @@
-<?php namespace Plateau\Mirage;
+<?php namespace Hawle\Mirage;
 
 use Illuminate\Support\ServiceProvider;
 
@@ -18,7 +18,7 @@ class MirageServiceProvider extends ServiceProvider {
 	 */
 	public function boot()
 	{
-		$this->package('plateau/mirage');
+		$this->package('hawle/mirage');
 	}
 
 	/**
